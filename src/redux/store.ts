@@ -1,12 +1,13 @@
 import { configureStore } from "@reduxjs/toolkit";
 import cartReducer from "./features/cartSlice";
-import LoadingReducer from "./features/loadingSlice"; import productReducer from "./features/productSlice";
+import loadingReducer from "./features/loadingSlice";
+import productReducer from "./features/productSlice";
 
 export const store = configureStore({
   reducer: {
   cartReducer,
   productReducer,
-  LoadingReducer
+  loadingReducer
   },
   devTools: process.env.NODE_ENV !== "production"
 });
