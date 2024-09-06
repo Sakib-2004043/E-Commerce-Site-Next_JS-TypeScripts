@@ -4,5 +4,5 @@ export default function Home() {
     <main>
       Hellow 51:30 Minute
     </main>
-  );
+  )
 }
